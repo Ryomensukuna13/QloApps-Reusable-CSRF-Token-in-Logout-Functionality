@@ -24,3 +24,15 @@ Together, these weaknesses allow attackers to repeatedly force a user logout and
 1. Login to the QloApps demo site.  
 2. Capture the logout request:
 <img width="404" height="224" alt="image" src="https://github.com/user-attachments/assets/51cf8929-7e50-4572-a57d-680c223309bc" />
+3. Observe that the **response includes the token in the URL**, making it accessible to logs and third-party trackers.  
+4. Replay the same request multiple times in Burp Suite.  
+5. The server consistently returns **200 OK**, and the same token is accepted.  
+
+This demonstrates that the token is both **exposed** and **reusable**.
+
+---
+
+## Security Impact
+- Attackers can repeatedly terminate user sessions via a malicious link or hidden image:  
+```html
+<img src="https://demo.qloapps.com/103-208-230-52/?mylogout=1&token=a2edbe57e755bafd90828744d4a8679d" />

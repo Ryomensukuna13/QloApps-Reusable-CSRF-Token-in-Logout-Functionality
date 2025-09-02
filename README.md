@@ -1,7 +1,7 @@
 # QloApps-Reusable-CSRF-Token-in-Logout-Functionality
 
-**Product:** [QloApps – Hotel Booking & Reservation System]  
-**Tested Version:** [version / demo instance]  
+**Product:** QloApps  
+**Tested Version:** 1.7.0  
 **CWE:** CWE-639: Authorization Bypass Through User-Controlled Key, CWE-352: Cross-Site Request Forgery (CSRF)
 ## Description
 QloApps uses a token parameter (`token=...`) in the logout function to protect against CSRF attacks. However, this implementation is flawed:

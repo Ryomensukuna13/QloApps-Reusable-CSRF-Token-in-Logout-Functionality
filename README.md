@@ -23,3 +23,4 @@ Together, these weaknesses allow attackers to repeatedly force a user logout and
 
 1. Login to the QloApps demo site.  
 2. Capture the logout request:
+<img width="404" height="224" alt="image" src="https://github.com/user-attachments/assets/51cf8929-7e50-4572-a57d-680c223309bc" />

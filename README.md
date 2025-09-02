@@ -1,0 +1,1 @@
+# QloApps-Reusable-CSRF-Token-in-Logout-Functionality
